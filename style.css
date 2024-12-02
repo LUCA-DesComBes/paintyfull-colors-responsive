@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 22px 0px 50px;
+}
+
+#first-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 38px;
+    color: #369EFF;
+}
+
+#super {
+    font-weight: 900;
+    font-size: 24px;
+    color: #3E3E3E;
+    width: 80%;
+}
+
+#create-gray {
+    font-weight: 400;
+    font-size: 12px;
+    color: #808080;
+    width: 80%;
+    margin-bottom: 54px;
+}
+
+#sec-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img {
+    margin-bottom: 124px;
+}
+#colors {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#orange-sun, #green-mint, #purple-sober, #cyan-dive, #yellow-sand {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 49px;
+    gap: 15px;
+}
+
+#orange-sun {
+    background-color: #FBDF93;
+}
+
+#green-mint {
+    background-color: #D3FB93;
+}
+
+#purple-sober {
+    background-color: #E193FB;
+}
+
+#cyan-dive {
+    background-color: #93F0FB;
+}
+
+#yellow-sand {
+    background-color: #F7FB93;
+}
+
+.hexa {
+    font-weight: 600;
+    font-size: 22px;
+    color: #1E1E1E;
+}
+
+.color {
+    font-weight: 400;
+    font-size: 12px;
+    color: #808080;
+}
+
+@media screen and (min-width: 431px){
+    #main {
+        flex-direction: row;
+    }
+    #super {
+        font-size: 28px;
+    }
+    #create-gray {
+        font-size: 14px;
+    }
+    #colors {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #orange-sun, #green-mint, #purple-sober, #cyan-dive, #yellow-sand {
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 835px) {
+    #main {
+        justify-content: space-between;
+    }
+    h1 {
+        font-size: 58px;
+    }
+    #super {
+        text-align: end;
+        font-size: 32px;
+        width: 50%;
+        margin-left:120px;
+    }
+    #create-gray {
+        text-align: end;
+        font-size: 16px;
+        width: 50%;
+        margin-left: 120px;
+    }
+    #img {
+        width: 100%;
+        margin-right: 140px;
+    }
+    #colors {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    #orange-sun, #green-mint, #purple-sober, #cyan-dive, #yellow-sand {
+        height: 70vh;
+    }
+}
